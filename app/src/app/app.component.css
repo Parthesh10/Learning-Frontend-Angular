@@ -1,0 +1,33 @@
+.navbar {
+    position: fixed; /* Fix the navigation bar */
+    top: 0; /* Place it at the top of the viewport */
+    left: 0; /* Place it at the left of the viewport */
+    width: 100%; /* Make it full-width */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 5px 0; /* Add some padding */
+    z-index: 100; /* Ensure it's above other elements */
+  }
+
+.navbar ul {
+    list-style: none;
+    margin-top: 10px;
+    align-items: center;
+  } 
+
+.navbar li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 20px;
+    text-align: center;
+
+  }
+  
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.navbar a.active {
+    font-weight: bold; /* Style the active link */
+  }

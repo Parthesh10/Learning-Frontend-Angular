@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router'; // Import RouterModule a
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route to home
@@ -23,7 +24,8 @@ const routes: Routes = [
     DashboardComponent,
     HomeComponent,
     AboutComponent,
-    ResumeComponent
+    ResumeComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

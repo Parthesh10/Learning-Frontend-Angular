@@ -4,28 +4,24 @@ import { RouterModule, Routes } from '@angular/router'; // Import RouterModule a
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component'; // Import other components
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { LayoutComponent } from './components/layout/layout.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route to home
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'resume', component: ResumeComponent },
-  // Add more routes as needed
+  // Your routes here
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
+    LayoutComponent,
+    DashboardComponent, // Add other components here
     HomeComponent,
     AboutComponent,
     ResumeComponent,
-    LayoutComponent
   ],
   imports: [
     BrowserModule,
